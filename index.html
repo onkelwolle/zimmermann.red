@@ -3,8 +3,8 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Wolfgang Zimmermann</title>
-  <meta name="description" content="Wolfgang Zimmermann – contact">
+  <title>Shera &amp; Wolfgang · zimmermann.red</title>
+  <meta name="description" content="Shera &amp; Wolfgang – contact">
   <meta name="theme-color" content="#0d0f10">
   <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='6' fill='%230d0f10'/%3E%3Ctext x='6' y='23' font-family='monospace' font-size='18' font-weight='bold' fill='%23ff5f56'%3E%3E_%3C/text%3E%3C/svg%3E">
   <style>
@@ -59,6 +59,14 @@
     .ps b { color: var(--accent); font-weight: normal; }
     .out { color: var(--text); margin-bottom: 12px; }
     h1 { font-size: inherit; font-weight: bold; margin: 0 0 12px; }
+    .who {
+      display: grid;
+      grid-template-columns: max-content 1fr;
+      column-gap: 2.5ch;
+      margin: 0 0 12px;
+    }
+    .who dt { font-weight: bold; }
+    .who dd { margin: 0; min-width: 0; }
     a { color: var(--accent); text-decoration: none; border-bottom: 1px dashed currentColor; }
     a:hover, a:focus-visible { border-bottom-style: solid; outline: none; }
     .cursor {
@@ -82,10 +90,13 @@
       <span>zimmermann.red</span>
     </div>
     <div class="body">
-      <p class="ps"><b>~</b> $ whoami</p>
-      <h1 class="out">Wolfgang Zimmermann</h1>
-      <p class="ps"><b>~</b> $ contact</p>
-      <p class="out"><a href="mailto:wolfgang@zimmermann.red">wolfgang@zimmermann.red</a></p>
+      <p class="ps"><b>~</b> $ users</p>
+      <h1 class="out">Shera &amp; Wolfgang</h1>
+      <p class="ps"><b>~</b> $ finger</p>
+      <dl class="who">
+        <dt>Shera</dt><dd><a href="mailto:shera@zimmermann.red">shera@zimmermann.red</a></dd>
+        <dt>Wolfgang</dt><dd><a href="mailto:wolfgang@zimmermann.red">wolfgang@zimmermann.red</a></dd>
+      </dl>
       <p class="ps"><b>~</b> $ <span class="cursor" aria-hidden="true"></span></p>
     </div>
   </main>
