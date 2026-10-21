@@ -19,11 +19,15 @@
       --mono: ui-monospace, "JetBrains Mono", "Fira Code", "Cascadia Code", Menlo, Consolas, "Liberation Mono", monospace;
     }
     * { box-sizing: border-box; }
-    html, body { height: 100%; margin: 0; }
+    html, body { margin: 0; }
     body {
       background: var(--bg);
       color: var(--text);
       font: 15px/1.7 var(--mono);
+    }
+    .wrap {
+      min-height: 100vh;
+      min-height: 100dvh;
       display: grid;
       place-items: center;
       padding: 16px;
@@ -71,6 +75,7 @@
   </style>
 </head>
 <body>
+  <div class="wrap">
   <main class="term">
     <div class="bar" aria-hidden="true">
       <i class="dot"></i><i class="dot"></i><i class="dot"></i>
@@ -84,5 +89,6 @@
       <p class="ps"><b>~</b> $ <span class="cursor" aria-hidden="true"></span></p>
     </div>
   </main>
+  </div>
 </body>
 </html>
