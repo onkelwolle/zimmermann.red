@@ -34,7 +34,7 @@
     }
     .term {
       width: 100%;
-      max-width: 560px;
+      max-width: 680px;
       background: var(--panel);
       border: 1px solid var(--border);
       border-radius: 10px;
@@ -67,6 +67,11 @@
     }
     .who dt { font-weight: bold; }
     .who dd { margin: 0; min-width: 0; }
+    .shot { margin: 4px 0 12px; }
+    .shot a { display: block; border: 1px solid var(--border); border-radius: 6px; overflow: hidden; line-height: 0; }
+    .shot a:hover, .shot a:focus-visible { border-color: var(--accent); }
+    .shot img { display: block; width: 100%; height: auto; }
+    .shot figcaption { color: var(--muted); font-size: 12px; margin-top: 6px; }
     a { color: var(--accent); text-decoration: none; border-bottom: 1px dashed currentColor; }
     a:hover, a:focus-visible { border-bottom-style: solid; outline: none; }
     .cursor {
@@ -92,11 +97,21 @@
     <div class="body">
       <p class="ps"><b>~</b> $ users</p>
       <h1 class="out">Shera &amp; Wolfgang</h1>
-      <p class="ps"><b>~</b> $ finger</p>
+      <p class="ps"><b>~</b> $ cat contacts</p>
       <dl class="who">
         <dt>Shera</dt><dd><a href="mailto:shera@zimmermann.red">shera@zimmermann.red</a></dd>
         <dt>Wolfgang</dt><dd><a href="mailto:wolfgang@zimmermann.red">wolfgang@zimmermann.red</a></dd>
       </dl>
+      <p class="ps"><b>~</b> $ open space-selfie.jpg</p>
+      <figure class="shot">
+        <a href="img/space-selfie-full.jpg">
+          <picture>
+            <source type="image/webp" srcset="img/space-selfie-800.webp 800w, img/space-selfie-1600.webp 1600w" sizes="(max-width: 680px) 100vw, 640px">
+            <img src="img/space-selfie-1600.jpg" srcset="img/space-selfie-800.jpg 800w, img/space-selfie-1600.jpg 1600w" sizes="(max-width: 680px) 100vw, 640px" width="1600" height="1200" loading="lazy" decoding="async" alt="Photo of Shera and Wolfgang shown on a satellite's screen in orbit, with Earth below">
+          </picture>
+        </a>
+        <figcaption>// Shera &amp; Wolfgang, in orbit · 2026-09-29</figcaption>
+      </figure>
       <p class="ps"><b>~</b> $ <span class="cursor" aria-hidden="true"></span></p>
     </div>
   </main>
